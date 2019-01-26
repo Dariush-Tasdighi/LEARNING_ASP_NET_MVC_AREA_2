@@ -1,0 +1,21 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>List</title>
+</head>
+<body>
+
+	<a href="~/Home/Index">Home</a>
+
+	<br />
+
+	@Html.ActionLink("Home", "Index", "Home", routeValues: new { Area = "" }, htmlAttributes: null)
+
+</body>
+</html>

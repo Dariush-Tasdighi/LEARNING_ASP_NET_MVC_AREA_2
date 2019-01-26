@@ -1,0 +1,29 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+
+	<a href="~/Administrator/User/List">Users List</a>
+
+	<br />
+
+	@Html.ActionLink("Users List", "List", "User", routeValues: new { Area = "Administrator" }, htmlAttributes: null)
+
+	<hr />
+
+	<a href="~/Administrator/Home/Index">Home of Administrator</a>
+
+	<br />
+
+	@Html.ActionLink("Home of Administrator", "Index", "Home", routeValues: new { Area = "Administrator" }, htmlAttributes: null)
+
+</body>
+</html>
